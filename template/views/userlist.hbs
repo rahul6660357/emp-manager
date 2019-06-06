@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+      #main{
+        padding: 7%;
+      }
+      #emp{
+        width: 33%;
+        display: inline-block;
+        box-shadow: -5px 5px 34px -8px rgba(0,0,0,0.75);
+        padding: 2%;
+        margin: 5%;
+      }
+      input{
+        width: 100%;
+      }
+      @media (max-width:1024px){
+        #emp{
+          width: 100%;
+        }
+      }
+    </style>
+  <title>Chanana Electronics</title>
+</head>
+<body onload="run()">
+  {{>header}}
+  <div id="main">
+    
+  </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Complaint details</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Customer Name:</h4>
+          <input type="text" placeholder="Please enter customer Name..." id="cname">
+          <br><br>
+          <h4>Customer Phoneno:</h4>
+          <input type="text" placeholder="Please enter customer Phone..." id="cphone">
+          <br><br>
+          <h4>Customer Complaint:</h4>
+          <input type="text" placeholder="Please enter customer Complaint..." id="ccomplaint">
+          <br><br>
+          <h4>Customer Address:</h4>
+          <input type="text" placeholder="Please enter customer Address..." id="caddress">
+        </div>
+        <div>
+          <button class="btn btn-success" style="margin-left:10px;" onclick="submitcomplaint()">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" id="closebtn">Close</button>
+        </div>
+        <br>
+      </div>
+      
+    </div>
+  </div>
+<script src="js/userlist.js"></script>
+<script src="js/user.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</body>
+</html>
