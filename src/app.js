@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 const app = express();
 const session = require('express-session');
 const hbs = require('hbs');
-
+// vcxz
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json()); 
